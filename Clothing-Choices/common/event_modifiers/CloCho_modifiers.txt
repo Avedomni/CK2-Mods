@@ -1,0 +1,19 @@
+bare_head = {
+  icon = 18
+}
+
+wearing_hood = {
+  icon = 18
+}
+
+wearing_helm = {
+  icon = 18
+}
+
+wearing_circlet = {
+  icon = 18
+}
+
+wearing_crown = {
+  icon = 18
+}
