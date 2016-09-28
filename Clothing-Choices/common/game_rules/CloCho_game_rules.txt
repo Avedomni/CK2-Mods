@@ -1,0 +1,24 @@
+clothing_duration = {
+	name = "CLOTHING_CHOICE_DURATION"
+  desc = "CLOTHING_CHOICE_DURATION_DESC"
+	option = {
+		name = eternal
+		text = "RULE_CLOCHO_ETERNAL"
+		desc = "RULE_CLOCHO_ETERNAL_DESC"
+	}
+	option = {
+		name = one_year
+		text = "RULE_CLOCHO_ONE_YEAR"
+		desc = "RULE_CLOCHO_ONE_YEAR_DESC"
+	}
+	option = {
+		name = five_year
+		text = "RULE_CLOCHO_FIVE_YEAR"
+		desc = "RULE_CLOCHO_FIVE_YEAR_DESC"
+	}
+	option = {
+		name = ten_year
+		text = "RULE_CLOCHO_TEN_YEAR"
+		desc = "RULE_CLOCHO_TEN_YEAR_DESC"
+	}
+}
