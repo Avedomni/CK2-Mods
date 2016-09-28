@@ -1,0 +1,347 @@
+namespace = CloCho
+
+character_event = {
+  id = CloCho.1
+
+  border = GFX_event_normal_frame_diplomacy
+  desc = EVTDESCCloCho_1
+  is_triggered_only = yes
+
+  immediate = {
+    if = {
+      limit = {
+        NOR = {
+          has_character_modifier = bare_head
+          has_character_modifier = wearing_hood
+          has_character_modifier = wearing_helm
+          has_character_modifier = wearing_circlet
+          has_character_modifier = wearing_crown
+        }
+      }
+      if = {
+        limit = { higher_real_tier_than = duke }
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = eternal
+            }
+          }
+          add_character_modifier = {modifier = wearing_crown duration = -1}
+          break = yes
+        }
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = one_year
+            }
+          }
+          add_character_modifier = {modifier = wearing_crown duration = 365}
+          break = yes
+        }
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = five_year
+            }
+          }
+          add_character_modifier = {modifier = wearing_crown duration = 1825}
+          break = yes
+        }
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = ten_year
+            }
+          }
+          add_character_modifier = {modifier = wearing_crown duration = 3650}
+          break = yes
+        }
+      }
+    }
+  }
+  
+  option = { # None
+    name = EVTOPTACloCho_1
+    trigger = {
+      NOT = { has_character_modifier = bare_head}
+    }
+    custom_tooltip = {
+      text = BARE_HEADED_TOOLTIP
+      hidden_tooltip = {
+        remove_character_modifier = wearing_hood
+        remove_character_modifier = wearing_helm
+        remove_character_modifier = wearing_circlet
+        remove_character_modifier = wearing_crown
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = eternal
+            }
+          }
+          add_character_modifier = {modifier = bare_head duration = -1}
+          break = yes
+        }
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = one_year
+            }
+          }
+          add_character_modifier = {modifier = bare_head duration = 365}
+          break = yes
+        }
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = five_year
+            }
+          }
+          add_character_modifier = {modifier = bare_head duration = 1825}
+          break = yes
+        }
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = ten_year
+            }
+          }
+          add_character_modifier = {modifier = bare_head duration = 3650}
+          break = yes
+        }
+      }
+    }
+  }
+
+  option = { # Hood
+    name = EVTOPTBCloCho_1
+    trigger = {
+      NOT = { has_character_flag = force_hood}
+    }
+    custom_tooltip = {
+      text = HOODED_TOOLTIP
+      hidden_tooltip = {
+        remove_character_modifier = bare_head
+        remove_character_modifier = wearing_helm
+        remove_character_modifier = wearing_circlet
+        remove_character_modifier = wearing_crown
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = eternal
+            }
+          }
+          add_character_modifier = {modifier = wearing_hood duration = -1}
+          break = yes
+        }
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = one_year
+            }
+          }
+          add_character_modifier = {modifier = wearing_hood duration = 365}
+          break = yes
+        }
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = five_year
+            }
+          }
+          add_character_modifier = {modifier = wearing_hood duration = 1825}
+          break = yes
+        }
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = ten_year
+            }
+          }
+          add_character_modifier = {modifier = wearing_hood duration = 3650}
+          break = yes
+        }
+      }
+    }
+  }
+
+  option = { # Martial
+    name = EVTOPTCCloCho_1
+    trigger = {
+      NOT = { has_character_modifier = wearing_helm}
+    }
+    custom_tooltip = {
+      text = HELMETED_TOOLTIP
+      hidden_tooltip = {
+        remove_character_modifier = bare_head
+        remove_character_modifier = wearing_hood
+        remove_character_modifier = wearing_circlet
+        remove_character_modifier = wearing_crown
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = eternal
+            }
+          }
+          add_character_modifier = {modifier = wearing_helm duration = -1}
+          break = yes
+        }
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = one_year
+            }
+          }
+          add_character_modifier = {modifier = wearing_helm duration = 365}
+          break = yes
+        }
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = five_year
+            }
+          }
+          add_character_modifier = {modifier = wearing_helm duration = 1825}
+          break = yes
+        }
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = ten_year
+            }
+          }
+          add_character_modifier = {modifier = wearing_helm duration = 3650}
+          break = yes
+        }
+      }
+    }
+  }
+
+  option = { # Circlet / Turbin
+    name = EVTOPTDCloCho_1
+    trigger = {
+      NOT = { has_character_modifier = wearing_circlet}
+    }
+    custom_tooltip = {
+      text = ELEGANT_TOOLTIP
+      hidden_tooltip = {
+        remove_character_modifier = bare_head
+        remove_character_modifier = wearing_helm
+        remove_character_modifier = wearing_hood
+        remove_character_modifier = wearing_crown
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = eternal
+            }
+          }
+          add_character_modifier = {modifier = wearing_circlet duration = -1}
+          break = yes
+        }
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = one_year
+            }
+          }
+          add_character_modifier = {modifier = wearing_circlet duration = 365}
+          break = yes
+        }
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = five_year
+            }
+          }
+          add_character_modifier = {modifier = wearing_circlet duration = 1825}
+          break = yes
+        }
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = ten_year
+            }
+          }
+          add_character_modifier = {modifier = wearing_circlet duration = 3650}
+          break = yes
+        }
+      }
+    }
+  }
+
+  option = { # Crown
+    name = EVTOPTECloCho_1
+    trigger = {
+      NOT = { has_character_modifier = wearing_crown }
+      higher_real_tier_than = duke
+    }
+    custom_tooltip = {
+      text = CROWNED_TOOLTIP
+      hidden_tooltip = {
+        remove_character_modifier = bare_head
+        remove_character_modifier = wearing_helm
+        remove_character_modifier = wearing_circlet
+        remove_character_modifier = wearing_hood
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = eternal
+            }
+          }
+          add_character_modifier = {modifier = wearing_crown duration = -1}
+          break = yes
+        }
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = one_year
+            }
+          }
+          add_character_modifier = {modifier = wearing_crown duration = 365}
+          break = yes
+        }
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = five_year
+            }
+          }
+          add_character_modifier = {modifier = wearing_crown duration = 1825}
+          break = yes
+        }
+        if = {
+          limit = {
+            has_game_rule = {
+              name = clothing_duration
+              value = ten_year
+            }
+          }
+          add_character_modifier = {modifier = wearing_crown duration = 3650}
+          break = yes
+        }
+      }
+    }
+  }
+}
