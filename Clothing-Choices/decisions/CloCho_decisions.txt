@@ -1,0 +1,28 @@
+targetted_decisions = {
+  change_headgear = {
+		filter = self
+		ai_target_filter = self
+
+    is_patrician = no
+    
+		from_potential = {
+			ai = no
+		}
+		
+		potential = {
+			always = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+    	character_event = { id = CloCho.1 }
+    }
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+  }
+}
