@@ -1,0 +1,28 @@
+change_headgear;Change Headwear;;;;;;;;;;;;;x
+change_headgear_desc;Choose what to wear on your head.;;;;;;;;;;;;;x
+EVTDESCCloCho_1;I think I'll go with ...;;;;;;;;;;;;;x
+EVTOPTACloCho_1;...nothing.;;;;;;;;;;;;;x
+EVTOPTBCloCho_1;...common garb.;;;;;;;;;;;;;x
+EVTOPTCCloCho_1;...battle ready.;;;;;;;;;;;;;x
+EVTOPTDCloCho_1;...elegance.;;;;;;;;;;;;;x
+EVTOPTECloCho_1;...majesty.;;;;;;;;;;;;;x
+BARE_HEADED_TOOLTIP;Remove all headgear.;;;;;;;;;;;;;x
+HOODED_TOOLTIP;Wear something fitting for a commoner;;;;;;;;;;;;;x
+HELMETED_TOOLTIP;Wear a helmet suitable for battle.;;;;;;;;;;;;;x
+ELEGANT_TOOLTIP;Wear something suitable for nobility.;;;;;;;;;;;;;x
+CROWNED_TOOLTIP;Wear the symbol of your royal status;;;;;;;;;;;;;x
+CLOTHING_CHOICE_DURATION;Clothing Duration;;;;;;;;;;;;;x
+CLOTHING_CHOICE_DURATION_DESC;How long the choice of headwear persists before returning to default;;;;;;;;;;;;;x
+RULE_CLOCHO_ETERNAL;Permanent;;;;;;;;;;;;;x
+RULE_CLOCHO_ETERNAL_DESC;The choice remains until changed by the player.;;;;;;;;;;;;;x
+RULE_CLOCHO_ONE_YEAR;One Year;;;;;;;;;;;;;x
+RULE_CLOCHO_ONE_YEAR_DESC;The choice persists for one year.;;;;;;;;;;;;;x
+RULE_CLOCHO_FIVE_YEAR;Five Years;;;;;;;;;;;;;x
+RULE_CLOCHO_FIVE_YEAR_DESC;The choice persists for five years.;;;;;;;;;;;;;x
+RULE_CLOCHO_TEN_YEAR;Ten Years;;;;;;;;;;;;;x
+RULE_CLOCHO_TEN_YEAR_DESC;The choice persists for ten years.;;;;;;;;;;;;;x
+bare_head;Going bare-headed;;;;;;;;;;;;;x
+wearing_hood;Wearing commoner garb;;;;;;;;;;;;;x
+wearing_helm;Wearing military garb;;;;;;;;;;;;;x
+wearing_circlet;Wearing noble garb;;;;;;;;;;;;;x
+wearing_crown;Wearing royal garb;;;;;;;;;;;;;x
