@@ -1,4 +1,5 @@
 # The choice is made based on a weighted random, but the first factor that evaluates to >= 100 will be automatically chosen
+# For Clothing Choices, derived from CK2+
 
 # p0 background
 0 = {
