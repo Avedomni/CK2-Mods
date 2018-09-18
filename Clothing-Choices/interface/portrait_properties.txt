@@ -1401,6 +1401,7 @@
 			NOT = {has_character_modifier = wearing_crown}
 			NOT = { real_tier = emperor }
 			NOT = { spouse = { real_tier = emperor } }
+            NOT = { is_offmap_tag_including_dead = offmap_china }
 		}
 		modifier = {
 			factor = 0
@@ -1417,15 +1418,25 @@
 				trait = desert_father
 				trait = perfecti
 			}
+			NOT = { is_offmap_tag_including_dead = offmap_china }
+		
 		}
 		modifier = {
-		  factor = 0
-		  OR = {
-			has_character_modifier = bare_head
-			has_character_modifier = wearing_hood
-			has_character_modifier = wearing_helm
-			has_character_modifier = wearing_circlet
-		  }
+            factor = 0
+            OR = {
+                has_character_modifier = bare_head
+                has_character_modifier = wearing_hood
+                has_character_modifier = wearing_helm
+                has_character_modifier = wearing_circlet
+            }
+		}
+		modifier = {
+			factor = 0
+			song_dynasty_futou_trigger = yes
+		}
+		modifier = {
+			factor = 0
+			has_landed_title = e_china_west_governor # Uses martial clothing instead
 		}
 	}
 	
@@ -1491,13 +1502,13 @@
 			}
 		}
 		modifier = {
-		  factor = 0
-		  OR = {
-			has_character_modifier = bare_head
-			has_character_modifier = wearing_hood
-			has_character_modifier = wearing_helm
-			has_character_modifier = wearing_circlet
-		  }
+            factor = 0
+            OR = {
+                has_character_modifier = bare_head
+                has_character_modifier = wearing_hood
+                has_character_modifier = wearing_helm
+                has_character_modifier = wearing_circlet
+            }
 		}
 	}
 
@@ -1509,10 +1520,12 @@
 			NOT = {has_character_modifier = wearing_crown}
 			NOT = { real_tier = king }
 			NOT = { spouse = { real_tier = king } }
+			NOT = { song_dynasty_futou_trigger = yes }
 		}
 		modifier = {
 			factor = 0
 			is_feudal = no
+			NOT = { song_dynasty_futou_trigger = yes }
 		}
 		modifier = {
 			factor = 0
@@ -1527,13 +1540,17 @@
 			}
 		}
 		modifier = {
-		  factor = 0
-		  OR = {
-			has_character_modifier = bare_head
-			has_character_modifier = wearing_hood
-			has_character_modifier = wearing_helm
-			has_character_modifier = wearing_circlet
-		  }
+            factor = 0
+            OR = {
+                has_character_modifier = bare_head
+                has_character_modifier = wearing_hood
+                has_character_modifier = wearing_helm
+                has_character_modifier = wearing_circlet
+            }
+		}
+		modifier = {
+			factor = 100
+			song_dynasty_futou_trigger = yes
 		}
 	}
 
@@ -1577,13 +1594,13 @@
 			}
 		}
 		modifier = {
-		  factor = 0
-		  OR = {
-			has_character_modifier = bare_head
-			has_character_modifier = wearing_hood
-			has_character_modifier = wearing_helm
-			has_character_modifier = wearing_crown
-		  }
+            factor = 0
+            OR = {
+                has_character_modifier = bare_head
+                has_character_modifier = wearing_hood
+                has_character_modifier = wearing_helm
+                has_character_modifier = wearing_crown
+            }
 		}
 	}
 
@@ -1598,6 +1615,7 @@
 			NOT = { trait = druze_uqqal }
 			NOT = { trait = druze_ajawid }
 			OR = {
+				is_or_was_offmap_power_ruler = yes
 				is_ruler = yes
 				has_minor_title = title_prince
 				spouse = { real_tier = emperor }
@@ -1619,13 +1637,13 @@
 			religion_group = pagan_group
 		}
 		modifier = {
-		  factor = 0
-		  OR = {
-			has_character_modifier = bare_head
-			has_character_modifier = wearing_crown
-			has_character_modifier = wearing_helm
-			has_character_modifier = wearing_circlet
-		  }
+            factor = 0
+            OR = {
+                has_character_modifier = bare_head
+                has_character_modifier = wearing_crown
+                has_character_modifier = wearing_helm
+                has_character_modifier = wearing_circlet
+            }
 		}
 	}
 	
@@ -1641,6 +1659,7 @@
 			NOT = { trait = desert_father }
 			NOT = { trait = perfecti }
 			OR = {
+				is_or_was_offmap_power_ruler = yes
 				is_ruler = yes
 				has_minor_title = title_prince
 				spouse = { real_tier = emperor }
@@ -1661,13 +1680,13 @@
 			is_female = no
 		}
 		modifier = {
-		  factor = 0
-		  OR = {
-			has_character_modifier = bare_head
-			has_character_modifier = wearing_crown
-			has_character_modifier = wearing_helm
-			has_character_modifier = wearing_circlet
-		  }
+            factor = 0
+            OR = {
+                has_character_modifier = bare_head
+                has_character_modifier = wearing_crown
+                has_character_modifier = wearing_helm
+                has_character_modifier = wearing_circlet
+            }
 		}
 	}
 
@@ -1681,6 +1700,7 @@
 			NOT = { trait = heresiarch }
 			OR = {
 				NOT = { religion = orthodox }
+				is_or_was_offmap_power_ruler = yes
 				is_ruler = yes
 				has_minor_title = title_prince
 				spouse = { real_tier = emperor }
@@ -1689,13 +1709,13 @@
 			}
 		}
 		modifier = {
-		  factor = 0
-		  OR = {
-			has_character_modifier = bare_head
-			has_character_modifier = wearing_crown
-			has_character_modifier = wearing_helm
-			has_character_modifier = wearing_circlet
-		  }
+            factor = 0
+            OR = {
+                has_character_modifier = bare_head
+                has_character_modifier = wearing_crown
+                has_character_modifier = wearing_helm
+                has_character_modifier = wearing_circlet
+            }
 		}
 	}
 	
@@ -1711,6 +1731,7 @@
 			NOT = { trait = desert_mother }
 			NOT = { trait = perfecti }
 			OR = {
+				is_or_was_offmap_power_ruler = yes
 				is_ruler = yes
 				has_minor_title = title_prince
 				spouse = { real_tier = emperor }
@@ -1743,14 +1764,29 @@
 
 	# Shady headgear
 	9 = {
-		factor = 100
+		factor = 3
 		modifier = {
 			factor = 0
-			higher_real_tier_than = count
+			OR = {
+				real_tier = king
+				real_tier = emperor
+				AND = {
+					real_tier = duke
+					any_demesne_title = {
+						real_tier = baron
+					}
+				}
+				spouse = { real_tier = king }
+				spouse = { real_tier = emperor }
+			}
 		}
 		modifier = {
 			factor = 0
 			NOT = { has_job_title = job_spymaster }
+			OR = {
+				real_tier = duke
+				NOT = { intrigue = 10 }
+			}
 		}
 		modifier = {
 		  factor = 0
@@ -1769,58 +1805,7 @@
 		modifier = {
 			factor = 0
 			NOT = {has_character_modifier = wearing_helm}
-			NOT = { has_job_title  = job_marshal }
-			NOT = { in_command = yes }
-			NOT = {
-				primary_title = {
-					OR = {
-						mercenary = yes
-						holy_order = yes
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			higher_real_tier_than = count
-			NOT = {has_character_modifier = wearing_helm}
-			OR = {
-				AND = {
-					is_female = yes
-					OR = {
-						NOT = { has_minor_title = title_commander }
-						NOT = { trait = shieldmaiden }
-					}
-				}
-				real_tier = king
-				real_tier = emperor
-				AND = {
-					real_tier = duke
-					any_demesne_title = {
-						real_tier = baron
-					}
-					NOT = {
-						primary_title = {
-							OR = {
-								mercenary = yes
-								title = d_knights_hospitaler
-								title = d_knights_templar
-								title = d_teutonic_order
-							}
-						}
-					}
-				}
-				AND = {
-					religion_group = christian
-					OR = {
-						AND = {
-							is_ruler = yes
-							is_theocracy = yes
-						}
-						has_job_title = job_spiritual
-					}
-				}
-			}
+			NOT = { has_portrait_property = { layer = 3 index = 10 } }
 		}
 		modifier = {
 		  factor = 0
@@ -1855,13 +1840,40 @@
 			}
 		}
 		modifier = {
-		  factor = 0
-		  OR = {
-			has_character_modifier = wearing_crown
-			has_character_modifier = wearing_hood
-			has_character_modifier = wearing_helm
-			has_character_modifier = wearing_circlet
-		  }
+            factor = 0
+            OR = {
+                has_character_modifier = wearing_crown
+                has_character_modifier = wearing_hood
+                has_character_modifier = wearing_helm
+                has_character_modifier = wearing_circlet
+            }
+		}
+	}
+
+	# Chinese Martial Extension 1
+	12 = {
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { has_portrait_property = { layer = 3 index = 12 } }
+		}
+	}
+	
+	# Chinese Martial Extension 2
+	13 = {
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { has_portrait_property = { layer = 3 index = 13 } }
+		}
+	}
+	
+	# Chinese Martial Extension 3
+	14 = {
+		factor = 100
+		modifier = {
+			factor = 0
+			NOT = { has_portrait_property = { layer = 3 index = 14 } }
 		}
 	}
 }
